@@ -15,3 +15,11 @@ class Choice(models.Model):
     
     def __str__(self):
         return self.choice_text
+    
+    
+class Todo(models.Model):
+    task_text = models.CharField(max_length= 100)
+    created_date = models.DateField('created date')
+    
+    def __str__(self):
+        return f'task:= {self.task_text} created at: {self.created_date}'
