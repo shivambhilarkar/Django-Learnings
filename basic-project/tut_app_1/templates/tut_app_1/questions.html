@@ -1,0 +1,11 @@
+{% extends 'tut_app_1\master.html' %}
+
+{% block dynamic_content_block %}
+    {% for question in questions %}
+        <li> {{ question.question_text }}</li>
+    {% endfor %}
+
+{% endblock %}
+
+  
+
